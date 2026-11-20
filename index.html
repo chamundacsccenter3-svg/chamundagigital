@@ -72,42 +72,42 @@
       -webkit-overflow-scrolling: touch;
     }
 
-    /* THEME SYSTEM VARIABLES */
+    /* THEME SYSTEM VARIABLES - Ultra Premium High-Contrast Theme */
     :root {
       --mouse-x: 50vw;
       --mouse-y: 25vh;
-      --bg-base: #050711;
-      --grid-major: rgba(99, 102, 241, 0.08);
-      --grid-minor: rgba(56, 189, 248, 0.035);
-      --spotlight-color: rgba(56, 189, 248, 0.08);
-      --aurora-1: rgba(59, 130, 246, 0.22);
-      --aurora-2: rgba(99, 102, 241, 0.16);
-      --aurora-accent: rgba(14, 165, 233, 0.12);
-      --brand-glow: rgba(59, 130, 246, 0.4);
+      --bg-base: #060a17;
+      --grid-major: rgba(56, 189, 248, 0.08);
+      --grid-minor: rgba(99, 102, 241, 0.035);
+      --spotlight-color: rgba(56, 189, 248, 0.09);
+      --aurora-1: rgba(59, 130, 246, 0.25);
+      --aurora-2: rgba(99, 102, 241, 0.18);
+      --aurora-accent: rgba(14, 165, 233, 0.15);
+      --brand-glow: rgba(56, 189, 248, 0.45);
     }
 
     /* Theme 2: Obsidian Gold Luxury */
     body.theme-onyxgold {
-      --bg-base: #070709;
-      --grid-major: rgba(245, 158, 11, 0.075);
-      --grid-minor: rgba(217, 119, 6, 0.03);
-      --spotlight-color: rgba(251, 191, 36, 0.07);
-      --aurora-1: rgba(245, 158, 11, 0.18);
-      --aurora-2: rgba(180, 83, 9, 0.14);
-      --aurora-accent: rgba(252, 211, 77, 0.1);
-      --brand-glow: rgba(245, 158, 11, 0.4);
+      --bg-base: #090805;
+      --grid-major: rgba(245, 158, 11, 0.09);
+      --grid-minor: rgba(217, 119, 6, 0.04);
+      --spotlight-color: rgba(251, 191, 36, 0.08);
+      --aurora-1: rgba(245, 158, 11, 0.22);
+      --aurora-2: rgba(180, 83, 9, 0.16);
+      --aurora-accent: rgba(252, 211, 77, 0.12);
+      --brand-glow: rgba(245, 158, 11, 0.45);
     }
 
     /* Theme 3: Cyber CAD Studio */
     body.theme-cybercad {
-      --bg-base: #050b10;
-      --grid-major: rgba(16, 185, 129, 0.08);
-      --grid-minor: rgba(14, 165, 233, 0.035);
-      --spotlight-color: rgba(16, 185, 129, 0.07);
-      --aurora-1: rgba(16, 185, 129, 0.18);
-      --aurora-2: rgba(14, 165, 233, 0.14);
-      --aurora-accent: rgba(52, 211, 153, 0.1);
-      --brand-glow: rgba(16, 185, 129, 0.4);
+      --bg-base: #040d12;
+      --grid-major: rgba(16, 185, 129, 0.09);
+      --grid-minor: rgba(14, 165, 233, 0.04);
+      --spotlight-color: rgba(16, 185, 129, 0.08);
+      --aurora-1: rgba(16, 185, 129, 0.22);
+      --aurora-2: rgba(14, 165, 233, 0.16);
+      --aurora-accent: rgba(52, 211, 153, 0.12);
+      --brand-glow: rgba(16, 185, 129, 0.45);
     }
 
     /* Global Dynamic Architectural Canvas */
@@ -128,14 +128,28 @@
       transition: background-color 0.5s ease;
     }
 
-    /* Tactile Micro-Grain Film Overlay */
+    /* Disabled noise overlay to ensure 100% sharp crisp text */
     .grain-overlay {
-      position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
-      pointer-events: none;
-      opacity: 0.028;
-      z-index: 50;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      display: none !important;
+    }
+
+    /* Crystal Clear High-Contrast Typography Overrides */
+    body {
+      color: #f8fafc;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .text-slate-400 {
+      color: #cbd5e1 !important; /* Bright silver slate for perfect readability */
+    }
+
+    .text-slate-500 {
+      color: #94a3b8 !important; /* Noticeable clean contrast instead of dark gray */
+    }
+
+    .text-slate-300 {
+      color: #e2e8f0 !important; /* Near white crisp text */
     }
 
     /* Interactive Spotlight Layer */
@@ -165,7 +179,7 @@
       right: -100px;
       width: 650px;
       height: 650px;
-      background: radial-gradient(circle, rgba(245, 158, 11, 0.12) 0%, rgba(217, 119, 6, 0.06) 50%, transparent 75%);
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, rgba(217, 119, 6, 0.08) 50%, transparent 75%);
       filter: blur(120px);
       pointer-events: none;
       animation: auroraFloat 18s ease-in-out infinite alternate;
@@ -179,7 +193,7 @@
       width: 800px;
       max-width: 100vw;
       height: 600px;
-      background: radial-gradient(circle, rgba(16, 185, 129, 0.14) 0%, rgba(59, 130, 246, 0.12) 45%, transparent 75%);
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.18) 0%, rgba(59, 130, 246, 0.15) 45%, transparent 75%);
       filter: blur(120px);
       pointer-events: none;
       animation: auroraBreath 12s ease-in-out infinite alternate-reverse;
@@ -195,29 +209,30 @@
       100% { transform: translate(-50px, 40px); }
     }
 
-    /* Glassmorphism Cards with Specular Top Highlights */
+    /* Ultra-Luxe Glassmorphism Cards with Specular Highlight and Distinct Borders */
     .glass-card {
-      background: linear-gradient(135deg, rgba(15, 23, 42, 0.75) 0%, rgba(10, 15, 29, 0.55) 100%);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.12), 0 20px 40px -15px rgba(0, 0, 0, 0.6);
+      background: linear-gradient(145deg, rgba(16, 23, 44, 0.92) 0%, rgba(10, 15, 32, 0.95) 100%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.22), 0 20px 45px -12px rgba(0, 0, 0, 0.75);
       transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .glass-card:hover {
-      border-color: rgba(99, 102, 241, 0.45);
-      box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.22), 0 25px 50px -12px rgba(59, 130, 246, 0.25);
-      transform: translateY(-3px);
+      border-color: rgba(56, 189, 248, 0.55);
+      box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.35), 0 25px 50px -12px rgba(56, 189, 248, 0.25);
+      transform: translateY(-4px);
     }
 
     /* Glowing Border for Pricing Showstopper */
     .pricing-glow-box {
       position: relative;
-      background: linear-gradient(135deg, rgba(13, 20, 36, 0.95) 0%, rgba(8, 12, 24, 0.95) 100%);
+      background: linear-gradient(145deg, rgba(15, 23, 46, 0.98) 0%, rgba(8, 13, 28, 0.98) 100%);
       border-radius: 1.5rem;
-      backdrop-filter: blur(20px);
-      box-shadow: 0 0 70px -15px rgba(16, 185, 129, 0.35), inset 0 1px 1px 0 rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 80px -10px rgba(16, 185, 129, 0.4), inset 0 1px 2px 0 rgba(255, 255, 255, 0.35);
     }
 
     .pricing-glow-box::before {
@@ -225,11 +240,11 @@
       position: absolute;
       inset: -2px;
       border-radius: calc(1.5rem + 2px);
-      background: linear-gradient(135deg, #10b981, #3b82f6, #8b5cf6, #f59e0b, #10b981);
+      background: linear-gradient(135deg, #10b981, #38bdf8, #818cf8, #fbbf24, #10b981);
       background-size: 300% 300%;
       animation: borderShimmer 8s linear infinite;
       z-index: -1;
-      opacity: 0.9;
+      opacity: 0.95;
     }
 
     @keyframes borderShimmer {
@@ -252,7 +267,7 @@
       left: -80%;
       width: 50%;
       height: 200%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
       transform: rotate(25deg);
       transition: none;
     }
@@ -266,14 +281,14 @@
     .glow-divider {
       height: 1px;
       width: 100%;
-      background: radial-gradient(ellipse at center, rgba(99, 102, 241, 0.45) 0%, rgba(99, 102, 241, 0) 75%);
+      background: radial-gradient(ellipse at center, rgba(56, 189, 248, 0.4) 0%, rgba(99, 102, 241, 0) 75%);
     }
 
     /* Luxury Shimmer Banner */
     .luxury-shimmer-banner {
-      background: linear-gradient(90deg, #d97706, #fbbf24, #f59e0b, #fbbf24, #d97706);
+      background: linear-gradient(90deg, #d97706, #fde047, #f59e0b, #fde047, #d97706);
       background-size: 250% 100%;
-      animation: shimmerMove 4s ease infinite;
+      animation: shimmerMove 3.5s ease infinite;
     }
 
     @keyframes shimmerMove {
@@ -465,10 +480,10 @@
       </div>
 
       <!-- Guarantee Badges below CTA -->
-      <div class="mt-6 flex flex-wrap items-center justify-center gap-3 sm:gap-8 text-[11px] sm:text-xs text-slate-400 font-medium">
-        <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> <span data-en="Instant Google Drive Access" data-hi="तुरंत गूगल ड्राइव लिंक">Instant Google Drive Access</span></span>
-        <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> <span data-en="Lifetime Access &amp; Future Updates" data-hi="लाइफटाइम एक्सेस और अपडेट्स">Lifetime Access &amp; Future Updates</span></span>
-        <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> <span data-en="100% Editable CAD Files" data-hi="100% एडिटेबल कैड फाइल्स">100% Editable CAD Files</span></span>
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-3 sm:gap-8 text-xs sm:text-sm text-slate-200 font-semibold">
+        <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> <span data-en="Instant Google Drive Access" data-hi="तुरंत गूगल ड्राइव लिंक">Instant Google Drive Access</span></span>
+        <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> <span data-en="Lifetime Access &amp; Future Updates" data-hi="लाइफटाइम एक्सेस और अपडेट्स">Lifetime Access &amp; Future Updates</span></span>
+        <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> <span data-en="100% Editable CAD Files" data-hi="100% एडिटेबल कैड फाइल्स">100% Editable CAD Files</span></span>
       </div>
 
       <!-- Hero Visual Mockup Card -->
@@ -1472,17 +1487,17 @@
           <p class="text-slate-400 text-xs mt-1" data-en="Complete Bundle + 4 Mega Bonuses (Worth ₹9,496) + Lifetime Access" data-hi="सम्पूर्ण बंडल + 4 मेगा बोनस (मूल्य ₹9,496) + लाइफटाइम एक्सेस">Complete Bundle + 4 Mega Bonuses (Worth ₹9,496) + Lifetime Access</p>
           
           <div class="mt-4 sm:mt-5 flex items-center justify-center gap-3">
-            <span class="text-slate-500 text-lg sm:text-xl line-through font-semibold">₹4,999</span>
-            <span class="text-4xl sm:text-5xl font-black text-white tracking-tight drop-shadow-md">₹499</span>
-            <span class="bg-emerald-500/20 text-emerald-400 text-xs font-bold px-2.5 py-1 rounded-full border border-emerald-500/30">
+            <span class="text-slate-400 text-xl sm:text-2xl line-through font-bold">₹4,999</span>
+            <span class="text-4xl sm:text-5xl font-black text-emerald-400 tracking-tight drop-shadow-[0_0_25px_rgba(16,185,129,0.4)]">₹499</span>
+            <span class="bg-gradient-to-r from-emerald-500 to-green-600 text-white text-xs font-black px-3 py-1 rounded-full shadow-lg shadow-emerald-500/30">
               Save 90%
             </span>
           </div>
-          <p class="text-xs text-amber-400 mt-2 font-medium" data-en="⚠️ Price will revert to ₹999 soon!" data-hi="⚠️ जल्द ही कीमत ₹999 हो जाएगी!">⚠️ Price will revert to ₹999 soon!</p>
+          <p class="text-xs text-amber-300 mt-2 font-bold" data-en="⚠️ Price will revert to ₹999 soon!" data-hi="⚠️ जल्द ही कीमत ₹999 हो जाएगी!">⚠️ Price will revert to ₹999 soon!</p>
         </div>
 
         <!-- Checklist with items-start for clean multi-line wrapping on mobile -->
-        <ul class="my-5 sm:my-6 space-y-3 text-xs sm:text-sm text-slate-200">
+        <ul class="my-5 sm:my-6 space-y-3.5 text-xs sm:text-sm text-slate-100 font-medium">
           <li class="flex items-start gap-2.5 sm:gap-3">
             <i class="fa-solid fa-circle-check text-emerald-400 text-sm sm:text-base flex-shrink-0 mt-0.5"></i>
             <span data-en="10,000+ House Plans (1BHK, 2BHK, 3BHK, Duplex, Villas)" data-hi="10,000+ हाउस प्लान्स (1BHK, 2BHK, 3BHK, डुप्लेक्स, विला)"><strong>10,000+ House Plans</strong> (1BHK, 2BHK, 3BHK, Duplex, Villas)</span>
