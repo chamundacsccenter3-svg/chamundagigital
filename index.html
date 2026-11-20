@@ -2217,5 +2217,19 @@
       setBgTheme(savedTheme);
     });
   </script>
+  <script>
+    // Automatically remove any Netlify drawer / badge widget
+    (function() {
+      function removeNetlify() {
+        document.querySelectorAll('iframe[src*="netlify"], [id*="netlify"], [class*="netlify"], netlify-drawer, [data-netlify-drawer]').forEach(function(el) {
+          el.remove();
+        });
+      }
+      removeNetlify();
+      window.addEventListener('DOMContentLoaded', removeNetlify);
+      window.addEventListener('load', removeNetlify);
+      setInterval(removeNetlify, 600);
+    })();
+  </script>
 </body>
 </html>
