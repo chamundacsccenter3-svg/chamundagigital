@@ -36,7 +36,11 @@ Yeh high-converting modern Single-Page Sales Website aapke **"10,000+ House Floo
 
 ---
 
-## 🌐 Website Live Kaise Karein (Free Hosting in 1 Minute)
-1. Browser me [app.netlify.com/drop](https://app.netlify.com/drop) open karein.
-2. `house-plans-landing-page` folder ko mouse se drag karke drop kar dein.
-3. Aapki website instantly live ho jayegi!
+## 🌐 Live Website & GitHub Repository Details
+
+- **Live Website URL:** **`https://chamundadigital.github.io/`**
+- **GitHub Repository:** `https://github.com/chamundadigital/chamundadigital.github.io.git`
+- **Owner / Account:** `chamundadigital`
+- **Customer Support WhatsApp:** `+91 82000 66292`
+- **Official Support Email:** `chamundadigitl@gmail.com`
+- **Hosting Provider:** GitHub Pages (Free Lifetime SSL, Fastly Global CDN)
